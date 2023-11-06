@@ -14,5 +14,5 @@ url = {}
 ```
 
 # Description
-The goal of this software is to demonstrate shrinkage bootstrap methods for input uncertainty quantification. 
+The goal of this software is to demonstrate the shrinkage bootstrap methods for input uncertainty quantification proposed in Song et al. 2023. 
 
