@@ -1,16 +1,15 @@
-There are three main R programs to create the coverage results:
+There are four main R scripts to create the coverage results:
 
+* DirectIUJackson_4ROAR.R:
+  This code simulates capacitated Jackson network with 4 input nodes and computes confidence interval coverage for all methods except the metamodel-based input uncertainty intervals.
 
-DirectIUJackson_4ROAR.R
-This code simulates capacitated Jackson network with 4 input nodes and computes confidence interval coverage for all methods except the metamodel-based input uncertainty intervals.
+* DirectIUJackson_10ROAR.R:
+  This code simulates capacitated Jackson network with 10 input nodes and computes confidence interval coverage for all methods except the metamodel-based input uncertainty intervals.
 
-DirectIUJackson_10ROAR.R
-This code simulates capacitated Jackson network with 10 input nodes and computes confidence interval coverage for all methods except the metamodel-based input uncertainty intervals.
-
-MMIUJackson_4ROAR.R
+* MMIUJackson_4ROAR.R:
 This code simulates capacitated Jackson network with 4 input nodes and computes confidence interval coverage for metamodel-based input uncertainty intervals.
 
-MMIUJackson_10ROAR.R
+* MMIUJackson_10ROAR.R: 
 This code simulates capacitated Jackson network with 10 input nodes and computes confidence interval coverage for metamodel-based input uncertainty intervals.
 
 Key parameters to set in these four routines:
