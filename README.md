@@ -1,3 +1,9 @@
+# Description
+The goal of this software is to demonstrate the shrinkage bootstrap methods for input uncertainty quantification proposed in "A Shrinkage Approach to Improve Direct Bootstrap
+Resampling under Input Uncertainty" by Eunhye Song, Henry Lam, and Russell Barton accepted for publication at INFORMS Journal on Computing.
+
+There are three folders corresponding the experiments in Sections 6.1--6.3 of the paper.   
+
 # Cite
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
@@ -12,7 +18,3 @@ doi = {},
 url = {}
 }
 ```
-
-# Description
-The goal of this software is to demonstrate the shrinkage bootstrap methods for input uncertainty quantification proposed in Song et al. 2023. 
-
