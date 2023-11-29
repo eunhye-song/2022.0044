@@ -29,6 +29,6 @@ Key parameters to set in these four routines:
 
 All other routines in this folder are necessary to support the computations. Each has a brief header in the code describing ther function. Two Python files are required to do the network simulation:
 
-* JN2c.py: This simulates the capacitated network.
+* JN2c.py: This simulates the capacitated Jackson network.
 
-* VBASim.py: This is a set of discrete-event simulation functions called by JN2c.py
+* VBASim.py: This is a set of discrete-event simulation functions called by JN2c.py; This code is implemented by Barry L. Nelson. The details of the software can be found in his book, Foundations and Methods of Stochastic Simulation: A First Course, Springer (2013), and website: http://users.iems.northwestern.edu/~nelsonb/IEMS435/index1e.html
