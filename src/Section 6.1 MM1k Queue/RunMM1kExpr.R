@@ -6,7 +6,7 @@ library(profvis)
 library(boot)
 
 source("runMacro.shrinkage.MM1k.R")
-source("MG1k.LindleySteadyState.R")
+source("GG1k.LindleySteadyState.R")
 
 # random number seed & number of macro replications
 set.seed(1234)

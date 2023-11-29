@@ -66,7 +66,7 @@ runMacro.shrinkage.MM1k <- function(lambda,mu,k,alpha,R0,R,macrorep,n,B)
     Yoriginal = matrix(0,R0,1)
     for(j in 1:R0)
     {
-      Yoriginal[j] = MG1k.LindleySteadyState(arrival,service,k);
+      Yoriginal[j] = GG1k.LindleySteadyState(arrival,service,k);
     }
     Yoriginal = sort(Yoriginal)
     Ybarbar = mean(Yoriginal)
@@ -89,7 +89,7 @@ runMacro.shrinkage.MM1k <- function(lambda,mu,k,alpha,R0,R,macrorep,n,B)
       # for bootstrap samples
       for (r in 1:R)
       {
-        Ybr[b,r] =  MG1k.LindleySteadyState(boot_arrival[,b],boot_service[,b],k);
+        Ybr[b,r] =  GG1k.LindleySteadyState(boot_arrival[,b],boot_service[,b],k);
       }
       Yhat[b] = mean(Ybr[b,])
       S2[b] = var(Ybr[b,])
