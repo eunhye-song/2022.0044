@@ -71,7 +71,7 @@ runMacro.shrinkage.MG1k <- function(lambda, betaMix_p, Balpha1a, Balpha2a, Balph
       Yoriginal = matrix(0,R0,1)
       for(j in 1:R0)
       {
-          Yoriginal[j] = MG1k.Lindley(arrival,service,k,m)$Ybar;
+          Yoriginal[j] = GG1k.Lindley(arrival,service,k,m)$Ybar;
       }
       Yoriginal = sort(Yoriginal)
       Ybarbar = mean(Yoriginal)
@@ -94,7 +94,7 @@ runMacro.shrinkage.MG1k <- function(lambda, betaMix_p, Balpha1a, Balpha2a, Balph
           # for bootstrap samples
           for (r in 1:R)
           {
-              Ybr[b,r] =  MG1k.Lindley(boot_arrival[,b],boot_service[,b],k,m)$Ybar;
+              Ybr[b,r] =  GG1k.Lindley(boot_arrival[,b],boot_service[,b],k,m)$Ybar;
           }
           Yhat[b] = mean(Ybr[b,])
           S2[b] = var(Ybr[b,])
